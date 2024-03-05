@@ -5,7 +5,7 @@ export default function TrainElement ({train}) {
         <div className={"train-element flex-fill m-4 p-4 border border-2 border-black rounded shadow-sm"}>
             <div className={"container "}>
                 <div className={"row"}>
-                    <div className={"col"}>
+                    <div className={"col d-flex justify-content-center align-items-center"}>
                         <img src={"/img.png"} width={64}/>
                     </div>
                     <div className={"col"}>
