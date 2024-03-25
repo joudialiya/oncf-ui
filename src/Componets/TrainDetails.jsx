@@ -1,9 +1,37 @@
 import Title from "./Title";
+import {Doughnut} from "react-chartjs-2";
 
 export default function TrainDetails () {
+    const data = {
+        labels: ['CCU', 'UGS', "TCU", "NOEUD"],
+        datasets: [
+            {
+                data: [2, 1, 4, 5],
+                backgroundColor: ["red", "orange", "green", "darkblue"]
+            },
+        ],
+    };
     return<>
         <div className={"m-4"}>
-            <Title text={<><i className={"bi-info"}/> Information sur la ramme</>}/>
+            <Title text={<><i className={"bi-info"}/> Information sur la rame</>}/>
+            <div className={"d-flex m-4"}>
+                <div className={"m-4 container w-25 shadow"}>
+                    <div className={"row justify-content-center bg-success-subtle"}>Connexion</div>
+                    <div className={"row"}>
+                        <div className={"col"}>M</div>
+                        <div className={"col"}><i className={"bi-wifi"} style={{color: "green"}}></i></div>
+                        <div className={"col"}>(172.0.0.1)</div>
+                    </div>
+                    <div className={"row"}>
+                        <div className={"col"}>MH</div>
+                        <div className={"col"}><i className={"bi-wifi-off"} style={{color: "red"}}></i></div>
+                        <div className={"col"}>(n/a)</div>
+                    </div>
+                </div>
+                <div className={"w-25"}><Doughnut data={data}/></div>
+
+            </div>
+
             <Title text={<><i className={"bi-list"}/> L'histoire des pannes</>}/>
             <div className={"d-flex justify-content-end"}>
                 <button className={"btn btn-warning me-2"}><i className={"bi-search"}/> Recevoire un releve</button>
@@ -24,7 +52,7 @@ export default function TrainDetails () {
             <table className={"table table-hover"}>
                 <thead>
                 <tr>
-                <th># Identifiant</th>
+                    <th># Identifiant</th>
                     <th>Date</th>
                     <th>Code de panne</th>
                     <th>Description de panne</th>

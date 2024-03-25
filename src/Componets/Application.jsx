@@ -7,6 +7,25 @@ import Header from "./Header";
 import  "bootstrap-icons/font/bootstrap-icons.css"
 import TrainDetails from "./TrainDetails";
 import BreakdownReference from "./BreakdownReference";
+import {
+    ArcElement,
+    Chart as ChartJS,
+    Tooltip,
+    Legend,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    PointElement, LineElement
+} from "chart.js";
+ChartJS.register(
+    ArcElement,
+    LinearScale,
+    CategoryScale,
+    BarElement,
+    PointElement,
+    LineElement,
+    Tooltip,
+    Legend);
 
 export default function Application() {
     return <>
