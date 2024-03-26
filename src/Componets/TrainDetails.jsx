@@ -16,7 +16,7 @@ export default function TrainDetails () {
             <Title text={<><i className={"bi-info"}/> Information sur la rame</>}/>
             <div className={"d-flex m-4"}>
                 <div className={"m-4 container w-25 shadow"}>
-                    <div className={"row justify-content-center bg-success-subtle"}>Connexion</div>
+                    <div className={"row justify-content-center align-items-start bg-success-subtle"}>Connectivite</div>
                     <div className={"row"}>
                         <div className={"col"}>M</div>
                         <div className={"col"}><i className={"bi-wifi"} style={{color: "green"}}></i></div>

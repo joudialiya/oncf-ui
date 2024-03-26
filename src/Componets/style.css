@@ -1,5 +1,5 @@
 .train-element {
-    min-width: 300px;
+    min-width: 200px;
 }
 .train-element:hover {
     background-color: lightblue;
@@ -8,5 +8,5 @@
     width: 100%;
 }
 .train-element-img {
-    max-height: 84px;
+    max-height: 64px;
 }

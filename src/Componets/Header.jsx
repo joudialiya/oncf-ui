@@ -20,6 +20,10 @@ export default function Header() {
                             <Link to={"/reference"} className="nav-link">
                                 <i className={"bi-code"}/> Reference des pannes</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to={"/report"} className="nav-link">
+                                <i className={"bi-code"}/> Rapport</Link>
+                        </li>
                     </ul>
                     <form className="d-flex">
                         <input className="form-control me-2" type="search" placeholder="Rechercher"

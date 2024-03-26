@@ -17,6 +17,7 @@ import {
     BarElement,
     PointElement, LineElement
 } from "chart.js";
+import ReportPage from "./ReportPage";
 ChartJS.register(
     ArcElement,
     LinearScale,
@@ -32,9 +33,10 @@ export default function Application() {
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path={"/"} element={<TrainList list={[1, 0, 3, 2]}/> }/>
+                <Route path={"/"} element={<TrainList list={[{id:1, state:true}, {id:1, state:false}, {id:1, state:false}, {id:1, state:false}]}/> }/>
                 <Route path={"/reference"} element={<BreakdownReference/>}/>
                 <Route path={"/details/:id"} element={<TrainDetails/>}/>
+                <Route path={"/report"} element={<ReportPage/>}/>
             </Routes>
         </BrowserRouter>
     </>
