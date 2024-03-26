@@ -32,10 +32,10 @@ export default function TrainDetails () {
 
             </div>
 
-            <Title text={<><i className={"bi-list"}/> L'histoire des pannes</>}/>
+            <Title text={<><i className={"bi-list"}/> L'historique des pannes</>}/>
             <div className={"d-flex justify-content-end"}>
-                <button className={"btn btn-warning me-2"}><i className={"bi-search"}/> Recevoire un releve</button>
-                <button className={"btn btn-success"}><i className={"bi-file-binary"}/> Export</button>
+                <button className={"btn btn-warning me-2"}><i className={"bi-search"}/> Recevoir un releve</button>
+                <button className={"btn btn-success"}><i className={"bi-file-binary"}/> Exporter </button>
             </div>
             <hr/>
             <div className={"bg-info text-white p-2 rounded"}>
